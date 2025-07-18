@@ -1,0 +1,9 @@
+Leader <space>
+
+MODE		KEY BINDING		DESCRIPTION
+normal		<leader>pv		Open current directory
+normal		J			Move up highlighted text 
+normal		K			Move down highlighted text 
+normal		<leader>y		Copy selected text into system's clipboard
+visual		<leader>y		Copy selected text into system's clipboard
+
