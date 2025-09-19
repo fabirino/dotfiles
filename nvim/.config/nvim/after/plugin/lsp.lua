@@ -56,6 +56,7 @@ require('mason-lspconfig').setup({
 		'lua_ls',
 		'rust_analyzer',
 		'eslint',
+        'pyright',
 	},
 	handlers = {
 		function(server_name)
