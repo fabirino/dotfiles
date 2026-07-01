@@ -29,3 +29,10 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 150
 
 vim.opt.showmode = false
+
+
+vim.filetype.add({
+  extension = {
+    tex = "tex",
+  },
+})

@@ -31,6 +31,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \
 
 3. Install other dependancies
 - ripgrep
+- tree-sitter (npm install -g tree-sitter-cli@0.25.10)
 
 4. Source the config file
 ```
