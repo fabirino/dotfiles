@@ -30,6 +30,9 @@ vim.opt.updatetime = 150
 
 vim.opt.showmode = false
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
 
 vim.filetype.add({
   extension = {

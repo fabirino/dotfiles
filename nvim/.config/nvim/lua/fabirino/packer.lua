@@ -62,7 +62,7 @@ return require('packer').startup(function(use)
     }
 
     -- Color highlight
-    use 'norcalli/nvim-colorizer.lua'
+    use 'catgoose/nvim-colorizer.lua'
 
     -- TODO Highlighting
     use "folke/todo-comments.nvim"
