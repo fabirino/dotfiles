@@ -12,7 +12,7 @@
 ## Instalation Steps
 1. Clone TPM (Tmux Plugin Manager)
 ```
-git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/.config/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/.config/tmux/plugins/tpm
 ```
 
 2. Start a tmux session
@@ -22,7 +22,7 @@ tmux
 
 3. Source the file
 ```
-tmux source  ~/dotfiles/tmux/.config/tmux.conf
+tmux source  ~/dotfiles/tmux/.config/tmux/tmux.conf
 ```
 
 4. Install the plugins
