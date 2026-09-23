@@ -11,13 +11,17 @@ return require('packer').startup(function(use)
 
     -- Telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
     -- Highlighting
-    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-    use('nvim-treesitter/playground')
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        branch = 'main',
+        run = ':TSUpdate'
+    }
+    -- use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
     -- Comments
     use 'tpope/vim-commentary'
@@ -76,5 +80,14 @@ return require('packer').startup(function(use)
         run = "make install_jsregexp"
     })
     use { 'saadparwaiz1/cmp_luasnip' }
+
+    use {
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = 'nvim-treesitter',
+        requires = 'nvim-tree/nvim-web-devicons',
+        config = function()
+            require('render-markdown').setup({})
+        end,
+    }
 
 end);
