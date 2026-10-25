@@ -15,7 +15,12 @@ require('nvim-treesitter').install {
     'css',
     'java',
     'javascript',
+    'typescript',
+    'tsx',
 }
+
+vim.treesitter.language.register('javascript', 'javascriptreact')
+vim.treesitter.language.register('tsx', 'typescriptreact')
 
 vim.api.nvim_create_autocmd('FileType', {
     pattern = {
@@ -30,6 +35,10 @@ vim.api.nvim_create_autocmd('FileType', {
         'css',
         'java',
         'javascript',
+        'javascriptreact',
+        'typescript',
+        'typescriptreact',
+        'tsx',
     },
     callback = function()
         vim.treesitter.start()

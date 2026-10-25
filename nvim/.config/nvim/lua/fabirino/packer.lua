@@ -59,6 +59,20 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        'windwp/nvim-ts-autotag',
+        requires = 'nvim-treesitter/nvim-treesitter',
+        config = function()
+            require('nvim-ts-autotag').setup({
+                opts = {
+                    enable_close = true,           -- escreves <div> e ele fecha </div>
+                    enable_rename = true,          -- mudas <div> e o </div> acompanha
+                    enable_close_on_slash = false,
+                },
+            })
+        end,
+    }
+
     -- Lualine
     use {
         'nvim-lualine/lualine.nvim',
